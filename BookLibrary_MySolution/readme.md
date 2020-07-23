@@ -1,2 +1,0 @@
-localstorage
-toggle read status
