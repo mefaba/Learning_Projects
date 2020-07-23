@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Book Library</title>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+		/>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="container">
+			<h2>Library(demo)</h2>
+
+			<div id="book-form">
+				<form onsubmit="handleSubmit(event)">
+					<label for="title">Book Title:</label>
+					<input type="text" id="title" autocomplete="off" />
+
+					<label for="title">Book Author:</label>
+					<input type="text" id="author" autocomplete="off" />
+
+					<label for="title">Genre</label>
+					<input type="text" id="genre" autocomplete="off" />
+
+					<label>
+						<input name="status" value="read" type="radio" id="read" />
+						<span>Read</span>
+					</label>
+
+					<label>
+						<input name="status" value="unread" type="radio" id="unread" />
+						<span>Unread</span>
+					</label>
+
+					<button type="submit">Add New Book</button>
+				</form>
+			</div>
+
+			<ul class="collapsible" id="library">
+				<li>
+					<div class="collapsible-header">
+						<i class="material-icons">library_books</i>
+						BookName:1984
+						<span class="badge">details</span>
+					</div>
+
+					<div class="collapsible-body">
+						<p>Author: George Orwell</p>
+						<p>Genre: Fiction</p>
+						<p>Status: Read</p>
+						<a class="waves-effect waves-light btn-small">Delete</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+		<script src="./main.js"></script>
+	</body>
+</html>
