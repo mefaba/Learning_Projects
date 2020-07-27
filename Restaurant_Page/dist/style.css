@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(141, 119, 93);
+}
+nav{
+    background-color: black;
+}
+.about-page{
+    font-size: 1.25rem;
+}
+.contact-page{
+    font-size: 1.25rem;
+}
+
+.home-page{
+ display: flex;
+ align-items: center;
+}
+.home-page-inner{
+
+}
+.home-page img{
+    width: 100%;
+    padding: 0;
+    box-shadow: 10px 10px 49px 1px rgba(0,0,0,0.75);
+    max-width:"250px";
+    max-height:"250px";
+}
